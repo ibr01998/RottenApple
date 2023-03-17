@@ -1,0 +1,24 @@
+uuid: e073d87b-750d-4f91-b68d-18fc4a900e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.review
+  module:
+    - media
+    - node
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  0: 'create image media'
+  1: 'delete own image media'
+  2: 'edit own image media'
+  3: 'create review content'
+  4: 'delete own review content'
+  5: 'edit own review content'
+  6: 'view own unpublished content'
+  8: 'create media'
+  9: 'view media'

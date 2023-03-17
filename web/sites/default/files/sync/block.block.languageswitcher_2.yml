@@ -1,0 +1,20 @@
+uuid: 2ed738ff-8f4b-432d-8828-8f49f373be11
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - electra
+id: languageswitcher_2
+theme: electra
+region: footer_middle
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

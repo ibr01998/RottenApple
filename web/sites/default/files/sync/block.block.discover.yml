@@ -1,0 +1,29 @@
+uuid: ced87be4-f162-4e73-bdf1-ab7f4470ccfa
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.discover
+  module:
+    - system
+  theme:
+    - electra
+id: discover
+theme: electra
+region: content_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:discover'
+settings:
+  id: 'system_menu_block:discover'
+  label: Discover
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /discover

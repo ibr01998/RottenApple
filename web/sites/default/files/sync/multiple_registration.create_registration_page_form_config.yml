@@ -1,0 +1,6 @@
+multiple_registration_path_editor: /user/register
+multiple_registration_url_editor: /user/register/editor
+multiple_registration_redirect_path_editor: /user/register
+multiple_registration_hidden_editor: 0
+multiple_registration_form_mode_register_editor: register
+multiple_registration_form_mode_edit_editor: default

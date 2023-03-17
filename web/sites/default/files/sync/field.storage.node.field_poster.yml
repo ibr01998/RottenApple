@@ -1,0 +1,20 @@
+uuid: 8f61274c-0604-4b9f-87bc-fe0700eb5d8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_poster
+field_name: field_poster
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,6 @@
+multiple_registration_pages_allowed_list:
+  content_editor: content_editor
+  administrator: administrator
+  editor: editor
+  anonymous: 0
+  authenticated: 0

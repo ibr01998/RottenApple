@@ -1,0 +1,23 @@
+label: 'Recente inhoud'
+description: 'Recente inhoud.'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Recente inhoud'
+      fields:
+        changed:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Geen inhoud beschikbaar.'
+      use_more_text: Meer
+  block_1:
+    display_title: Blok

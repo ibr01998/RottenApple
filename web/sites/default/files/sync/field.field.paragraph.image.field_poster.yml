@@ -1,0 +1,29 @@
+uuid: 5d4de623-8210-4e2f-96d7-c7a68d2cbf23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_poster
+    - media.type.image
+    - paragraphs.paragraphs_type.image
+id: paragraph.image.field_poster
+field_name: field_poster
+entity_type: paragraph
+bundle: image
+label: Poster
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

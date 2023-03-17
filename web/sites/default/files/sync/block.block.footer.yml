@@ -1,0 +1,27 @@
+uuid: 2692072b-64c8-45bb-9548-11aee9a2ea5f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - electra
+_core:
+  default_config_hash: MpCFtBTKCLtlv6TqMaMNTTukoLubsq9O3JdSkTJvnwI
+id: footer
+theme: electra
+region: footer_middle
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

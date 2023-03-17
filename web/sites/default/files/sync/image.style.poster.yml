@@ -1,0 +1,14 @@
+uuid: 7534bbf9-b26e-4089-9e95-0032851c6d5f
+langcode: en
+status: true
+dependencies: {  }
+name: poster
+label: Poster
+effects:
+  5aafb314-0c69-40be-b1f1-62075263aa8a:
+    uuid: 5aafb314-0c69-40be-b1f1-62075263aa8a
+    id: image_resize
+    weight: 1
+    data:
+      width: 800
+      height: 1000

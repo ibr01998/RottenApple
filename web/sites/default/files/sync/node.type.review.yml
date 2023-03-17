@@ -1,0 +1,17 @@
+uuid: 7d684e62-008a-4881-8030-5b4eadd506d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Review
+type: review
+description: 'TvShow/Movie review'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

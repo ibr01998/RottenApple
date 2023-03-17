@@ -1,0 +1,30 @@
+uuid: caca3f23-807e-417a-9e81-8fefb246b744
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:electra_parallax:f6b4fa7e-1854-4ac6-bac1-fb3e0d1fbfa6'
+  module:
+    - block_content
+    - system
+  theme:
+    - electra
+id: parrallex
+theme: electra
+region: content_top_fluid
+weight: 0
+provider: null
+plugin: 'block_content:f6b4fa7e-1854-4ac6-bac1-fb3e0d1fbfa6'
+settings:
+  id: 'block_content:f6b4fa7e-1854-4ac6-bac1-fb3e0d1fbfa6'
+  label: parrallex
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

@@ -1,0 +1,98 @@
+uuid: 93bd4a43-e590-4369-85a5-60980121f6df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.body
+    - field.field.node.review.field_category
+    - field.field.node.review.field_poster
+    - field.field.node.review.field_rating
+    - image.style.large
+    - node.type.review
+  module:
+    - ds
+    - media
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+          header: {  }
+          left: {  }
+          right: {  }
+          footer: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - field_poster
+      right:
+        - field_rating
+        - field_category
+        - node_author
+      footer:
+        - body
+    fields:
+      node_author:
+        plugin_id: node_author
+        weight: 3
+        label: inline
+        formatter: author_linked
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: footer
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: right
+  field_poster:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_rating:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: right
+hidden:
+  langcode: true
+  links: true
