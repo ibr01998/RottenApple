@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66a3e4f0f8bd9a7b1a0d530e2e3ab196",
+    "content-hash": "c0df8c787ef0ca5427ab52fe4bf8ca30",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1651,6 +1651,50 @@
                 "source": "http://git.drupal.org/project/ds.git",
                 "issues": "https://www.drupal.org/project/issues/ds",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/electra",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/electra.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/electra-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "323344f0816bdc4b51eb6cd8f4c09061156997c8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1593179066",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sreenivas Bttv",
+                    "homepage": "https://www.drupal.org/user/3133345"
+                }
+            ],
+            "description": "A Blog & multipurpose bootstrap 4 based theme",
+            "homepage": "https://www.drupal.org/project/electra",
+            "support": {
+                "source": "https://git.drupalcode.org/project/electra"
             }
         },
         {
