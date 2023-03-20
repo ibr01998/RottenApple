@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_poster
-    - image.style.large
+    - image.style.poster
     - node.type.review
   module:
     - media
@@ -26,53 +26,6 @@ display:
     display_options:
       title: Discover
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            trim: false
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         field_poster:
           id: field_poster
           table: node__field_poster
@@ -125,8 +78,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_link: ''
-            image_style: large
+            image_link: content
+            image_style: poster
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -188,8 +141,8 @@ display:
           plugin_id: date
           order: DESC
           expose:
-            label: 'Authored on'
-            field_identifier: created
+            label: ''
+            field_identifier: ''
           exposed: false
           granularity: second
       arguments: {  }
@@ -219,10 +172,49 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        latest_translation_affected_revision:
+          id: latest_translation_affected_revision
+          table: node_revision
+          field: latest_translation_affected_revision
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: latest_translation_affected_revision
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: grid
         options:
-          uses_fields: false
+          grouping: {  }
           columns: 3
           automatic_width: true
           alignment: horizontal
@@ -265,7 +257,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      rendering_language: '***LANGUAGE_entity_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
       path: discover
     cache_metadata:
