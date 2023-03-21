@@ -1,0 +1,23 @@
+uuid: 33d26144-97cf-4dc8-9abc-321eb9e3e882
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testing.field_test
+    - node.type.testing
+  module:
+    - user
+id: node.testing.teaser
+targetEntityType: node
+bundle: testing
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_test: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 2da7cfe6-7f41-4380-8ec0-e32ce9518a98
+langcode: en
+status: true
+dependencies: {  }
+id: youtube
+label: YouTube
+provider_url: 'https://www.youtube.com/'
+endpoints:
+  -
+    schemes:
+      - 'https://*.youtube.com/watch*'
+      - 'https://*.youtube.com/v/*'
+      - 'https://youtu.be/*'
+      - 'https://*.youtube.com/playlist?list=*'
+      - 'https://youtube.com/playlist?list=*'
+      - 'https://*.youtube.com/shorts'
+    url: 'https://www.youtube.com/oembed'
+    discovery: true
+    formats:
+      json: false
+      xml: false

@@ -1,0 +1,37 @@
+uuid: 161faaac-d3be-4d4e-a2d6-922fd2e9d2ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info
+    - node.type.review
+    - paragraphs.paragraphs_type.review_info
+  module:
+    - entity_reference_revisions
+id: node.review.field_info
+field_name: field_info
+entity_type: node
+bundle: review
+label: info
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      review_info: review_info
+    negate: 0
+    target_bundles_drag_drop:
+      image:
+        weight: 5
+        enabled: false
+      review:
+        weight: 6
+        enabled: false
+      review_info:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

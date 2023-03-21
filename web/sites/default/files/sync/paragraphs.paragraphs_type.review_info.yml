@@ -1,0 +1,10 @@
+uuid: f6fa0cd0-b8f8-423d-b77f-7671f982d3df
+langcode: en
+status: true
+dependencies: {  }
+id: review_info
+label: 'review Info'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

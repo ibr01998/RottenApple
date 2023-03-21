@@ -6,8 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.review.body
     - field.field.node.review.field_category
+    - field.field.node.review.field_image_left_text_right
+    - field.field.node.review.field_image_right
+    - field.field.node.review.field_info
     - field.field.node.review.field_poster
-    - field.field.node.review.field_rating
+    - field.field.node.review.field_trailer
+    - field.field.node.review.layout_builder__layout
     - image.style.large
     - node.type.review
   module:
@@ -54,17 +58,18 @@ content:
     third_party_settings: {  }
     weight: 0
     region: ds_content
-  field_rating:
-    type: number_integer
-    label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+  rate_user_rating:
+    settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: ds_content
+    weight: 100
+    region: content
 hidden:
   body: true
   field_category: true
+  field_image_left_text_right: true
+  field_image_right: true
+  field_info: true
+  field_trailer: true
   langcode: true
+  layout_builder__layout: true
   links: true

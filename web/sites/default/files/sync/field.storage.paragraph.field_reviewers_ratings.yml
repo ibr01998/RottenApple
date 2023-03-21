@@ -1,0 +1,20 @@
+uuid: b28496ff-0ef8-4386-821d-1999119a45cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_reviewers_ratings
+field_name: field_reviewers_ratings
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

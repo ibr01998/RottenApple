@@ -1,0 +1,72 @@
+uuid: b69082b2-a4bb-46bb-89d2-289e5ccbbefd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.review.field_body
+    - field.field.paragraph.review.field_category
+    - field.field.paragraph.review.field_poster
+    - field.field.paragraph.review.field_reviewers_
+    - field.field.paragraph.review.field_trailer
+    - paragraphs.paragraphs_type.review
+  module:
+    - text
+id: paragraph.review.default
+targetEntityType: paragraph
+bundle: review
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_category:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_poster:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reviewers_:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_trailer:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

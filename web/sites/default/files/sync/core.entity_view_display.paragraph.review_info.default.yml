@@ -1,0 +1,68 @@
+uuid: 87f04142-40e3-43c6-b29f-f3b81f723a35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.review_info.field_categories
+    - field.field.paragraph.review_info.field_reviewers_ratings
+    - paragraphs.paragraphs_type.review_info
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class:
+            bg-light: bg-light
+            col-md-12: col-md-12
+            card: card
+            card-body: card-body
+            d-flex: d-flex
+            justify-content-center: justify-content-center
+          ds_content:
+            card-body: card-body
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - rate_user_rating
+        - field_reviewers_ratings
+        - field_categories
+id: paragraph.review_info.default
+targetEntityType: paragraph
+bundle: review_info
+mode: default
+content:
+  field_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
+  field_reviewers_ratings:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+  rate_user_rating:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: ds_content
+hidden: {  }

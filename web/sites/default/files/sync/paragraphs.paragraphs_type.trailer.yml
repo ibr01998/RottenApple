@@ -1,0 +1,10 @@
+uuid: 54294256-4e64-4451-84c6-c1de82069c85
+langcode: en
+status: true
+dependencies: {  }
+id: trailer
+label: Trailer
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

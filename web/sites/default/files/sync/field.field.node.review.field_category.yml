@@ -1,4 +1,4 @@
-uuid: 839da295-4876-4cbb-be70-bc091680c66f
+uuid: b5bbc02f-20d2-4146-aff5-34a408894fe6
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ bundle: review
 label: Category
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

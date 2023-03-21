@@ -7,7 +7,15 @@ ft-show-colon: false
 ft-layout-builder: false
 classes:
   region:
-    - 'cursor: pointer;'
-    - ''
+    - bg-light
+    - col-md-12
+    - card
+    - card-body
+    - 'd-inline-flex '
+    - p-2
+    - pt-3
+    - m-2
+    - 'd-flex '
+    - justify-content-center
   field: {  }
 use_field_names: true

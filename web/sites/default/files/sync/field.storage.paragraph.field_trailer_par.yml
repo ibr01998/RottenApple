@@ -1,0 +1,20 @@
+uuid: 528b4bd7-080b-4735-af64-78f19c235697
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_trailer_par
+field_name: field_trailer_par
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

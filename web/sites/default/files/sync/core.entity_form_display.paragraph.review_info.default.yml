@@ -1,0 +1,33 @@
+uuid: c43892ba-dc46-4a58-b765-001a8dc9b0a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.review_info.field_categories
+    - field.field.paragraph.review_info.field_reviewers_ratings
+    - paragraphs.paragraphs_type.review_info
+id: paragraph.review_info.default
+targetEntityType: paragraph
+bundle: review_info
+mode: default
+content:
+  field_categories:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reviewers_ratings:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

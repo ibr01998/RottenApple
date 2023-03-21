@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - rate
     - search
     - shortcut
     - system
@@ -28,3 +29,6 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
+  - 'cast rate vote on node of review'
+  - 'cast rate vote on paragraph of review'
+  - 'cast rate vote on paragraph of review_info'

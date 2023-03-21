@@ -1,0 +1,23 @@
+uuid: 7e206e29-0975-4873-91fa-06ca7bd7ff88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reviewers_ratings
+    - paragraphs.paragraphs_type.review_info
+id: paragraph.review_info.field_reviewers_ratings
+field_name: field_reviewers_ratings
+entity_type: paragraph
+bundle: review_info
+label: 'Reviewers rating'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10
+  prefix: ''
+  suffix: /10
+field_type: integer

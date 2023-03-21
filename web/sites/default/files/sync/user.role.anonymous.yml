@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - rate
     - search
     - system
 _core:
@@ -24,3 +25,6 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
+  - 'cast rate vote on node of review'
+  - 'cast rate vote on paragraph of review'
+  - 'cast rate vote on paragraph of review_info'

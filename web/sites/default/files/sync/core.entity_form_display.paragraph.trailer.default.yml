@@ -1,0 +1,25 @@
+uuid: a6b6379c-4494-4c46-8242-5c7068e054d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trailer.field_trailer_par
+    - paragraphs.paragraphs_type.trailer
+id: paragraph.trailer.default
+targetEntityType: paragraph
+bundle: trailer
+mode: default
+content:
+  field_trailer_par:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

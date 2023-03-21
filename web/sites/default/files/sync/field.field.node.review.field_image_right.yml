@@ -1,0 +1,49 @@
+uuid: 918b36b0-df52-463a-9649-a0674cd46d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_right
+    - node.type.review
+    - paragraphs.paragraphs_type.text_left_image_right
+  module:
+    - entity_reference_revisions
+id: node.review.field_image_right
+field_name: field_image_right
+entity_type: node
+bundle: review
+label: 'image-right, text-left'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_left_image_right: text_left_image_right
+    negate: 0
+    target_bundles_drag_drop:
+      body:
+        weight: 9
+        enabled: false
+      image:
+        weight: 10
+        enabled: false
+      image_left_text_right:
+        weight: 11
+        enabled: false
+      review:
+        weight: 12
+        enabled: false
+      review_info:
+        weight: 13
+        enabled: false
+      text_left_image_right:
+        weight: 8
+        enabled: true
+      trailer:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

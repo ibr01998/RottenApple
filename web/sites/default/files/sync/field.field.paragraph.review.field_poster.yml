@@ -1,0 +1,29 @@
+uuid: 63fbc0ce-d16e-4fdb-b885-1c7eaf67ed10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_poster
+    - media.type.image
+    - paragraphs.paragraphs_type.review
+id: paragraph.review.field_poster
+field_name: field_poster
+entity_type: paragraph
+bundle: review
+label: Poster
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

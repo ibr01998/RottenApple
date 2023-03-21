@@ -1,0 +1,312 @@
+uuid: c3f57923-cd8c-4d0a-9bec-ed8ad2eeb30a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.review.body
+    - field.field.node.review.field_category
+    - field.field.node.review.field_image_left_text_right
+    - field.field.node.review.field_image_right
+    - field.field.node.review.field_info
+    - field.field.node.review.field_poster
+    - field.field.node.review.field_trailer
+    - field.field.node.review.layout_builder__layout
+    - image.style.large
+    - node.type.review
+  module:
+    - ds
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: ds_2col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          wrappers:
+            left: div
+            right: div
+          outer_wrapper: div
+          attributes: ''
+          link_attribute: ''
+          link_custom: ''
+          classes:
+            layout_class: {  }
+            left: {  }
+            right: {  }
+        components:
+          111e7f73-084e-495e-9b39-253ac81206dc:
+            uuid: 111e7f73-084e-495e-9b39-253ac81206dc
+            region: right
+            configuration:
+              id: 'field_block:node:review:field_info'
+              label: info
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d0fdde02-e841-4ec0-9752-0152314d813b:
+            uuid: d0fdde02-e841-4ec0-9752-0152314d813b
+            region: left
+            configuration:
+              id: 'field_block:node:review:field_poster'
+              label: Poster
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: poster
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          b45518b5-4bea-44ca-9880-dc6e294239ff:
+            uuid: b45518b5-4bea-44ca-9880-dc6e294239ff
+            region: left
+            configuration:
+              id: 'field_block:node:review:field_poster'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cd720d40-00a3-4149-97a0-4121469b23e7:
+            uuid: cd720d40-00a3-4149-97a0-4121469b23e7
+            region: right
+            configuration:
+              id: 'field_block:node:review:field_info'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          31932117-387e-4293-b193-c74ad58a8602:
+            uuid: 31932117-387e-4293-b193-c74ad58a8602
+            region: footer
+            configuration:
+              id: 'field_block:node:review:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2fb7ab03-adb9-48ce-a9e7-937e6b688425:
+            uuid: 2fb7ab03-adb9-48ce-a9e7-937e6b688425
+            region: footer
+            configuration:
+              id: 'field_block:node:review:field_image_left_text_right'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f36c169e-6e46-4e9f-8723-790675862481:
+            uuid: f36c169e-6e46-4e9f-8723-790675862481
+            region: footer
+            configuration:
+              id: 'field_block:node:review:field_trailer'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f85e7cde-4e66-49d7-bd66-6b08ff78c661:
+            uuid: f85e7cde-4e66-49d7-bd66-6b08ff78c661
+            region: content
+            configuration:
+              id: 'field_block:node:review:body'
+              label: Review
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b5a53840-5422-4058-b7c1-5ecf4b86a077:
+            uuid: b5a53840-5422-4058-b7c1-5ecf4b86a077
+            region: content
+            configuration:
+              id: 'field_block:node:review:field_image_left_text_right'
+              label: 'image-left text-right'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          61caebad-4f2c-4fec-b854-7c1bc9880bfd:
+            uuid: 61caebad-4f2c-4fec-b854-7c1bc9880bfd
+            region: content
+            configuration:
+              id: 'field_block:node:review:field_trailer'
+              label: Trailer
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          f68cc8d2-186e-458c-8029-6bdde98da259:
+            uuid: f68cc8d2-186e-458c-8029-6bdde98da259
+            region: content
+            configuration:
+              id: 'field_block:node:review:field_image_right'
+              label: 'image-right, text-left'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.review.full
+targetEntityType: node
+bundle: review
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: footer
+  field_image_left_text_right:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: footer
+  field_info:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: right
+  field_poster:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_trailer:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: footer
+hidden:
+  field_category: true
+  field_image_right: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  rate_rating: true
+  rate_user_rating: true

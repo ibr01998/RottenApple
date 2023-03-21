@@ -1,0 +1,29 @@
+uuid: 25f50920-9901-4f83-aa8c-69e558517294
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_trailer_par
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.trailer
+id: paragraph.trailer.field_trailer_par
+field_name: field_trailer_par
+entity_type: paragraph
+bundle: trailer
+label: Trailer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

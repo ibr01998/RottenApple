@@ -1,0 +1,103 @@
+uuid: 961e409a-23c1-402c-a3a1-255038728039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_left_image_right.field_image_right
+    - field.field.paragraph.text_left_image_right.field_text_left
+    - field.field.paragraph.text_left_image_right.layout_builder__layout
+    - image.style.large
+    - paragraphs.paragraphs_type.text_left_image_right
+  module:
+    - ds
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: ds_2col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          wrappers:
+            left: div
+            right: div
+          outer_wrapper: div
+          attributes: ''
+          link_attribute: ''
+          link_custom: ''
+          classes:
+            layout_class: {  }
+            left: {  }
+            right: {  }
+        components:
+          857c0a9e-8515-403b-bcf3-36c900e65d89:
+            uuid: 857c0a9e-8515-403b-bcf3-36c900e65d89
+            region: left
+            configuration:
+              id: 'field_block:paragraph:text_left_image_right:field_text_left'
+              label: text-left
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          be8a3b09-3ee1-4744-b2c3-ab9467a80544:
+            uuid: be8a3b09-3ee1-4744-b2c3-ab9467a80544
+            region: right
+            configuration:
+              id: 'field_block:paragraph:text_left_image_right:field_image_right'
+              label: image-right
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.text_left_image_right.default
+targetEntityType: paragraph
+bundle: text_left_image_right
+mode: default
+content:
+  field_image_right:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_left:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

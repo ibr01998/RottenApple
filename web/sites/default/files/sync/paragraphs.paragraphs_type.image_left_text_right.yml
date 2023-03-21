@@ -1,0 +1,10 @@
+uuid: b4d35014-ca82-4baf-ab20-fde85f516fc5
+langcode: en
+status: true
+dependencies: {  }
+id: image_left_text_right
+label: 'Image left, text right'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

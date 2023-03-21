@@ -1,0 +1,65 @@
+uuid: abf12492-95aa-4c14-b9f4-32f15fdc634d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_left_text_right.field_image_left
+    - field.field.paragraph.image_left_text_right.field_text_right
+    - image.style.large
+    - paragraphs.paragraphs_type.image_left_text_right
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class:
+            p-2: p-2
+          left:
+            p-2: p-2
+          right:
+            p-2: p-2
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - field_image_left
+      right:
+        - field_text_right
+id: paragraph.image_left_text_right.default
+targetEntityType: paragraph
+bundle: image_left_text_right
+mode: default
+content:
+  field_image_left:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_text_right:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: right
+hidden: {  }

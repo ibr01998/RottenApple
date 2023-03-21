@@ -1,0 +1,21 @@
+uuid: 51edae7d-9609-453f-ae5b-2af31fd7be80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.review
+  module:
+    - text
+id: paragraph.review.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: review
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

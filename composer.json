@@ -24,8 +24,10 @@
         "drupal/electra": "^3.2",
         "drupal/gin": "^3.0@RC",
         "drupal/multiple_registration": "^3.2",
+        "drupal/oembed_providers": "^2.1",
         "drupal/override_node_options": "^2.7",
         "drupal/paragraphs": "^1.15",
+        "drupal/rate": "^3.0",
         "drush/drush": "^11.5"
     },
     "conflict": {

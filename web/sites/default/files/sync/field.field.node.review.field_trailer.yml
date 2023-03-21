@@ -1,0 +1,40 @@
+uuid: 5c45edef-3ed2-4a8d-bf6a-9317878e49ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trailer
+    - node.type.review
+    - paragraphs.paragraphs_type.trailer
+  module:
+    - entity_reference_revisions
+id: node.review.field_trailer
+field_name: field_trailer
+entity_type: node
+bundle: review
+label: Trailer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      trailer: trailer
+    negate: 0
+    target_bundles_drag_drop:
+      image:
+        weight: 6
+        enabled: false
+      review:
+        weight: 7
+        enabled: false
+      review_info:
+        weight: 8
+        enabled: false
+      trailer:
+        weight: 5
+        enabled: true
+field_type: entity_reference_revisions

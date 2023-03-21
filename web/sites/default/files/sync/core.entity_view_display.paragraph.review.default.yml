@@ -1,0 +1,91 @@
+uuid: 83be55a6-7711-4836-8e8c-3996331e7dc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.review.field_body
+    - field.field.paragraph.review.field_category
+    - field.field.paragraph.review.field_poster
+    - field.field.paragraph.review.field_reviewers_
+    - field.field.paragraph.review.field_trailer
+    - paragraphs.paragraphs_type.review
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+          header: {  }
+          left: {  }
+          right: {  }
+          footer: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - field_poster
+      right:
+        - rate_user_rating
+        - field_reviewers_
+        - field_category
+      footer:
+        - field_body
+id: paragraph.review.default
+targetEntityType: paragraph
+bundle: review
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: footer
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: right
+  field_poster:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_reviewers_:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: right
+  rate_user_rating:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: right
+hidden:
+  field_trailer: true

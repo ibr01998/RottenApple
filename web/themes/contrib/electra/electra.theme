@@ -22,6 +22,15 @@ use Drupal\Component\Utility\Xss;
 /**
  * Implements hook_preprocess_input() for form submit button.
  */
+
+function electra_preprocess_ds_1col(&$variables) {
+  $variables['attributes']['class'][] = 'm-2';
+}
+
+function electra_preprocess_image_formatter(&$variables) {
+  $variables['attributes']['class'][] = 'rounded';
+}
+
 function electra_preprocess_input(&$variables) {
   $element = $variables['element'];
   if ($element['#type'] == 'submit') {
@@ -150,6 +159,7 @@ function electra_preprocess(&$variables) {
  */
 function electra_preprocess_menu_local_task(&$variables) {
   $variables['attributes']['class'][] = 'nav-item';
+  $variables['attributes']['class'][] = 'p-2';
   $variables['link']['#options']['attributes']['class'][] = 'nav-link';
 }
 
@@ -354,3 +364,4 @@ function electra_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     '#description' => t('If checked, a backlink to our site will be shown in the footer. This is not compulsory, but always appreciated!'),
   ];
 }
+

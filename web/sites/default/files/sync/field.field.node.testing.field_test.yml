@@ -1,0 +1,47 @@
+uuid: d6b1500d-0527-4fba-8613-c972ebe86774
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.testing
+  module:
+    - entity_reference_revisions
+id: node.testing.field_test
+field_name: field_test
+entity_type: node
+bundle: testing
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      body:
+        weight: 8
+        enabled: false
+      image:
+        weight: 9
+        enabled: false
+      image_left_text_right:
+        weight: 10
+        enabled: false
+      review:
+        weight: 11
+        enabled: false
+      review_info:
+        weight: 12
+        enabled: false
+      testing_something:
+        weight: 13
+        enabled: true
+      trailer:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions
