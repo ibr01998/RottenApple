@@ -28,6 +28,7 @@
         "drupal/override_node_options": "^2.7",
         "drupal/paragraphs": "^1.15",
         "drupal/rate": "^3.0",
+        "drupal/webform": "^6.1",
         "drush/drush": "^11.5"
     },
     "conflict": {
